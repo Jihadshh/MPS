@@ -1,0 +1,237 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="app-icon">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="40px" height="36px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;"
+            xml:space="preserve">
+            <g id="Page-1_4_" sketch:type="MSPage">
+              <g id="Desktop_4_" transform="translate(-84.000000, -410.000000)" sketch:type="MSArtboardGroup">
+                <path id="Cart" fill="currentColor" sketch:type="MSShapeGroup" class="st0"
+                  d="M94.5,434.6h24.8l4.7-15.7H92.2l-1.3-8.9H84v4.8h3.1l3.7,27.8h0.1
+                            c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h12.8c0,1.9,1.8,3.4,3.9,3.4c2.2,0,3.9-1.5,3.9-3.4h1.7v-3.9l-25.8-0.1L94.5,434.6" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item one active">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-shopping-bag">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span>Products</span>
+          </a>
+        </li>
+        <li class="sidebar-list-item two">
+          <a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-pie-chart">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M22 12A10 10 0 0 0 12 2v10z" />
+            </svg>
+            <span>Supermarkets</span>
+          </a>
+        </li>
+        <li class="sidebar-list-item three">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-inbox">
+              <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
+              <path
+                d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+            </svg>
+            <span>Previous Prices</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class="app-content">
+      <div class="app-content-header">
+        <h1 class="app-content-headerText">Ice Tea Prices in Supermarkets</h1>
+        <button class="mode-switch" title="Switch Theme">
+          <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+            <defs></defs>
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="app-content-actions">
+        <input class="search-bar" placeholder="Search..." type="text">
+        <div class="app-content-actions-wrapper">
+          <div class="filter-button-wrapper">
+            <button class="action-button filter jsFilter"><span>Filter</span><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+              </svg></button>
+            <div class="filter-menu">
+              <label>Region</label>
+              <select>
+                <option>All Regions</option>
+                <option>Haret Hreik</option>
+                <option>Ghobeiry</option>
+
+              </select>
+              <div class="filter-menu-buttons">
+                <button class="filter-button reset">
+                  Reset
+                </button>
+                <button class="filter-button apply">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="action-button list active" title="List View">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-list">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+          </button>
+          <button class="action-button grid" title="Grid View">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-grid">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="products-area-wrapper tableView">
+        <div class="products-header">
+          <div class="product-cell image">
+            Supermarkets
+          </div>
+          <div class="product-cell status-cell">Price of Ice-Tea<button class="sort-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z" />
+            </svg>
+          </button>
+        </div>
+          <div class="product-cell category">Address
+          </div>
+          
+      </div>
+          <div class="products-row">
+            <button class="cell-more-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-more-vertical">
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="12" cy="5" r="1" />
+                <circle cx="12" cy="19" r="1" />
+              </svg>
+            </button>
+            <div class="product-cell image">
+              <img
+                src=https://www.rinnoo.net/f/res/w06/locations-photos/000/501/0050126-269-rinnoo-a275aa047d5d4e769cbfa3863d6ce569.jpg
+                alt="product" style="max-width: 100%;height: auto;">
+                <button class="app-content-headerButton1"class="GFG" 
+                onclick="window.location.href = 'supermarkets-products.html';">Rammal Supermarket</button>
+            </div>
+            <div class="product-cell category"><span class="cell-label">Price of Ice-Tea:</span>8,000 L.L</div>
+
+            <div class="product-cell price"><span class="cell-label">Address:</span>Haret Hreik main street</div>
+          </div>
+          <div class="products-row">
+            <button class="cell-more-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-more-vertical">
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="12" cy="5" r="1" />
+                <circle cx="12" cy="19" r="1" />
+              </svg>
+            </button>
+            <div class="product-cell image">
+              <img
+                src="https://www.gra.world/wp-content/uploads/2019/07/carrefour-900x600.jpg"
+                alt="product" style="max-width: 100%; height: auto;">
+              <button class="app-content-headerButton1" class="GFG" 
+              onclick="window.location.href = 'supermarkets-products.html';" >Al-Tayyeb Supermarket</button>
+            </div>
+            <div class="product-cell category"><span class="cell-label">Price of Ice-Tea:</span>9,000 L.L</div>
+  
+            <div class="product-cell price"><span class="cell-label">Address:</span>Ghobeiry main street</div>
+          </div>
+
+        </div>
+        <script>
+          document.querySelector(".jsFilter").addEventListener("click", function () {
+            document.querySelector(".filter-menu").classList.toggle("active");
+          });
+
+          document.querySelector(".grid").addEventListener("click", function () {
+            document.querySelector(".list").classList.remove("active");
+            document.querySelector(".grid").classList.add("active");
+            document.querySelector(".products-area-wrapper").classList.add("gridView");
+            document
+              .querySelector(".products-area-wrapper")
+              .classList.remove("tableView");
+          });
+
+          document.querySelector(".list").addEventListener("click", function () {
+            document.querySelector(".list").classList.add("active");
+            document.querySelector(".grid").classList.remove("active");
+            document.querySelector(".products-area-wrapper").classList.remove("gridView");
+            document.querySelector(".products-area-wrapper").classList.add("tableView");
+          });
+
+          var modeSwitch = document.querySelector('.mode-switch');
+          modeSwitch.addEventListener('click', function () {
+            document.documentElement.classList.toggle('light');
+            modeSwitch.classList.toggle('active');
+          });
+
+          document.querySelector(".one").addEventListener("click", function () {
+            window.location.href = "supermarket.html";
+            document.querySelector(".one").classList.add("active");
+            document.querySelector(".two").classList.remove("active");
+            document.querySelector(".three").classList.remove("active");
+          });
+          document.querySelector(".three").addEventListener("click", function () {
+            window.location.href = "previous-prices.html";
+            document.querySelector(".three").classList.add("active");
+            document.querySelector(".one").classList.remove("active");
+            document.querySelector(".two").classList.remove("active");
+          });
+          document.querySelector(".two").addEventListener("click", function () {
+            window.location.href = "index.html";
+            document.querySelector(".two").classList.add("active");
+            document.querySelector(".three").classList.remove("active");
+            document.querySelector(".one").classList.remove("active");
+          });
+        </script>
+</body>
+
+</html>
